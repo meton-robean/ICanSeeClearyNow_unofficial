@@ -132,7 +132,7 @@ for epoch in range(args.epoch_start, args.epoch_num):
         #disc multi scale loss
         loss_disc_mutiscale = criterion_DiscMultiScaleLoss(pred_fake_list, pred_real_list)
         # Total loss
-        loss_G = 0.05*loss_GAN  + 0.05 * loss_vgg  + args.lambda_pixel * loss_pixel +0.05*loss_disc_mutiscale
+        loss_G = loss_GAN  + args.lambda_vgg*loss_vgg  + args.lambda_pixel * loss_pixel + loss_disc_mutiscale
                 
         loss_G.backward()
         optimizer_G.step()
