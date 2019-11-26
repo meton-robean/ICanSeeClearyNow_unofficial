@@ -10,7 +10,10 @@ then start to train:
 
 ### test
 `python icsc_test_robotcar_real.py  
-`
+
+### network  
+![network](https://github.com/meton-robean/ICanSeeClearyNow_unofficial/blob/master/Exp1_RobotCarReal-deraindrop/result_images/Selection_135.png)   
+
 ### training checkpoint 
 #### more details seen ./Exp1_RobotCarReal-deraindrop dir.
 ![result1](https://github.com/meton-robean/ICanSeeClearyNow_unofficial/blob/master/Exp1_RobotCarReal-deraindrop/result_images/14400-480.png)  
