@@ -142,7 +142,7 @@ if __name__ == '__main__':
     from model.discriminator import Discriminator_n_layers
 
     ###### load model ######
-    model = Derain_GlobalGenerator(input_nc=3, output_nc=3, ngf=32, n_downsampling=4, n_blocks=9, norm_layer=nn.BatchNorm2d, 
+    model = Derain_GlobalGenerator(input_nc=3, output_nc=3, ngf=16, n_downsampling=4, n_blocks=9, norm_layer=nn.BatchNorm2d, 
                  padding_type='reflect').cuda()
 
     D = NLayerDiscriminator(input_nc=3, ndf=64, n_layers=5, 
